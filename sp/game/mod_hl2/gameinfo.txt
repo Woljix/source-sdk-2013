@@ -1,6 +1,6 @@
 "GameInfo"
 {
-	game 		"My First HL2 Mod"
+	game 		"Woljix: Source"
 	title 		"HALF-LIFE'"
 	title2		""
 

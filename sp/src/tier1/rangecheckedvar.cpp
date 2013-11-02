@@ -35,7 +35,3 @@ CDisableRangeChecks::~CDisableRangeChecks()
 		g_bDoRangeChecks = true;
 	}
 }
-
-
-
-

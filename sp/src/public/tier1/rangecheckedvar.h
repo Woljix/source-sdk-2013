@@ -29,15 +29,6 @@ public:
 template< class T >
 inline void RangeCheck( const T &value, int minValue, int maxValue )
 {
-#ifdef _DEBUG
-	extern bool g_bDoRangeChecks;
-	if ( ThreadInMainThread() && g_bDoRangeChecks )
-	{
-		// Ignore the min/max stuff for now.. just make sure it's not a NAN.
-		Assert( _finite( value ) );
-	}
-#endif
-}
 
 inline void RangeCheck( const Vector &value, int minValue, int maxValue )
 {

@@ -1,8 +1,8 @@
 "GameInfo"
 {
-	game 		"My First Episodic Mod"
-	title 		"HALF-LIFE'"
-	title2		""
+	game 		"Woljix: Source"
+	title 		"WOLJIX'"
+	title2		"source"
 
 	type		singleplayer_only
 

@@ -2427,10 +2427,10 @@ bool CGameMovement::CheckJumpButton( void )
 	if ( g_bMovementOptimizations )
 	{
 #if defined(HL2_DLL) || defined(HL2_CLIENT_DLL)
-		Assert( GetCurrentGravity() == 600.0f );
+		Assert( GetCurrentGravity() == 0.0f );
 		flMul = 160.0f;	// approx. 21 units.
 #else
-		Assert( GetCurrentGravity() == 800.0f );
+		Assert( GetCurrentGravity() == 0.0f );
 		flMul = 268.3281572999747f;
 #endif
 
@@ -2481,8 +2481,8 @@ bool CGameMovement::CheckJumpButton( void )
 			flSpeedAddition -= flNewSpeed - flMaxSpeed;
 		}
 
-		if ( mv->m_flForwardMove < 0.0f )
-			flSpeedAddition *= -1.0f;
+		if ( mv->m_flForwardMove < 10.0f )
+			flSpeedAddition *= -10.0f;
 
 		// Add it on
 		VectorAdd( (vecForward*flSpeedAddition), mv->m_vecVelocity, mv->m_vecVelocity );
